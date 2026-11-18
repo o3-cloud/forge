@@ -5,11 +5,11 @@ Requirements are written in EARS. The system name is **Forge** throughout.
 ## 1. Scope and terms
 
 Forge is the set of Claude Code loops that build, verify, research, prototype, review, report
-on, and release the NerdFace app in this repository.
+on, and release the app in this repository.
 
 | Term | Meaning |
 | --- | --- |
-| Product owner | The person who owns NerdFace. The only one who starts a release or a loop session. |
+| Product owner | The person who owns the app. The only one who starts a release or a loop session. |
 | Loop | A Claude Code session that runs one loop skill on a cron schedule (`/loop <interval> /goal …`). |
 | Loop skill | `.claude/skills/forge-<name>/SKILL.md`: the prompt one loop runs. |
 | Run | One firing of a loop's cron, or one manual start of its skill. |
@@ -19,7 +19,7 @@ on, and release the NerdFace app in this repository.
 | Worktree | A git worktree under `.forge/worktree/<name>` on its own branch. |
 | Loop Station | The dashboard https://claude.ai/artifact/ELxJW2YUQ5UEmmeimCkMj8 and its collector `.forge/station/collect.py`. |
 | Loop registry | `.forge/loops.json`: one row per pane, the loop it runs, and its status. |
-| Alpha | The staging slot https://alpha.nerdface.app (wrangler env `staging`). |
+| Alpha | The staging slot (wrangler env `staging`). |
 | Outcome | One objective of `OUTCOMES.md` (O1 to O4); its key results are its measure. |
 | Attempt | One forge-fix run on an issue; the issue's `attempts` field counts them. |
 
